@@ -1,0 +1,23 @@
+service: example-lambda-using-layers
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  environment:
+    COMMON_LIB_LAYER_ARN: arn:aws:lambda:<AWS_REGION>:<AWS_ACCOUNT_ID>:layer:common-node-libs:1
+    NODE_PATH: "./:/opt/node_modules"
+
+package:
+  exclude:
+    - .git/**
+    - .vscode/**
+    - .serverless/**
+    - .idea/**
+    - node_modules/**
+    
+functions:
+  hello:
+    handler: handler.hello
+    layers:
+      - ${self:provider.environment.COMMON_LIB_LAYER_ARN}    
+

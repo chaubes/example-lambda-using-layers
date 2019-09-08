@@ -1,1 +1,1 @@
-example-lambda-using-layers
+example-lambda-using-layers: Example serverless applications with lambda functions using AWS Lambda Layers
