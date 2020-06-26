@@ -1,6 +1,6 @@
 # example-lambda-using-layers: Example serverless applications with lambda functions using AWS Lambda Layers
 
-Referenced in the blog post https://blog.saurabhchaubey.com/post/aws-layers/
+Referenced in the blog post [sharing-is-caring-sharing-dependencies-and-code-using-aws-lambda-layers](https://medium.com/@saurabh.chaubey17/sharing-is-caring-sharing-dependencies-and-code-using-aws-lambda-layers-7f04185dd414?source=friends_link&sk=f955fea12e4cec7719d2b230e577bcf6)
 
 ## Licence
 
